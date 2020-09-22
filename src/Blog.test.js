@@ -24,7 +24,8 @@ test('it renders the title and the content of the blog', () => {
   const button = screen.getByText(/publish/i)
   userEvent.click(button)
   const title = screen.getByText(/a test title/i)
-  const content = screen.getByText("The weather is nice today!")
   expect(title).toBeInTheDocument();
+  userEvent.click(title)
+  const content = screen.getByText("The weather is nice today!")
   expect(content).toBeInTheDocument();
 })

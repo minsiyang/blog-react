@@ -25,6 +25,11 @@ class Blog extends Component {
     event.preventDefault();
   }
 
+  getBlog = event => {
+    alert(event.target.value)
+    event.preventDefault();
+  }
+
   render() {
     return(
       <div className='blog'>
@@ -42,8 +47,8 @@ class Blog extends Component {
         <ul>
           {this.state.blogs.map((blog) => {
            return <li key={blog.title}>
-              <b>{blog.title}</b>
-              <p>{blog.content}</p>
+              <b onClick={this.getBlog} value={blog.title} >{blog.title}</b>
+              {/* <p>{blog.content}</p> */}
             </li>
           })}
         </ul>
