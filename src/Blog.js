@@ -40,8 +40,8 @@ class Blog extends Component {
           <input type='submit' value='Publish' onClick={this.handleSubmit} />
         </form>
         <ul>
-          {this.state.blogs.map((blog, index) => {
-           return <li key={index}>
+          {this.state.blogs.map((blog) => {
+           return <li key={blog.title}>
               <b>{blog.title}</b>
               <p>{blog.content}</p>
             </li>
