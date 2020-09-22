@@ -3,7 +3,7 @@
 
 ## Requirement 
 - user can enter a title, and content, and click save to create a blog
-- user can view the blog
+- user can view the blog tile and blog content
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
